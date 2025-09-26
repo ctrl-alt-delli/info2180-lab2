@@ -1,0 +1,143 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #2D3748;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    grid-area: header;
+    background-color: #63B3ED;
+    padding: 40px;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #FFF;
+}
+
+.h-1 {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.header-photo {
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.h-t{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header p {
+    margin: 0;
+}
+
+header h1 {
+    margin-bottom: 5px; 
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    grid-area: main;
+}
+
+article h2 {
+    font-size: 32px;
+    color: #48BB78;
+    margin-top: 0;
+}
+
+article h1{
+    font-size: 20px;
+    color: #718096;
+    font-weight: 400;
+}
+
+article img{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.bp1, .bp2 {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+.bp1 {
+    float: right;
+    padding-left: 50px;
+}
+
+.bp2{
+    float: left;
+    padding-right: 50px;
+}
+
+.about {
+    background-color: #E2E8F0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.about h3{
+    color: #000;
+}
+
+aside h3{
+    color: #48BB78;
+}
+
+aside a{
+    color: #4299E1;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+aside ul{
+    padding-left: 0;
+}
+
+aside li {
+    list-style-type: none;
+}
+
+footer {
+    background-color: #2C5282;
+    color: #FFF;
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+}
+
